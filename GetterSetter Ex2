@@ -1,0 +1,55 @@
+package package1;
+
+public class EmployeeBLC {
+      private int id;
+      private String name;
+      private int salary;
+      private String dept;
+      public void setId(int id) {
+    	  this.id=id;
+      }
+      public int getId() {
+    	  return id;
+      }
+      public void setName(String name) {
+    	  this.name=name;
+      }
+      public String getName() {
+    	  return name;
+      }
+      public void setSalary(int salary) {
+    	  this.salary=salary;
+      }
+      public int getSalary()
+      {
+    	  return salary;
+      }
+      public void setDept(String dept) {
+    	  this.dept=dept;
+      }
+      public String getDept()
+      {
+    	  return dept;
+      }
+      
+}
+
+
+///BankELC class
+package package1;
+
+public class EmployeeELC {
+
+	public static void main(String[] args) {
+		EmployeeBLC e=new EmployeeBLC();
+		e.setId(1);
+		e.setName("tara");
+		e.setSalary(200000);
+		e.setDept("cse");
+		System.out.println("Id of the employee is"+e.getId());
+		System.out.println("Name of the employee is"+e.getName());
+		System.out.println("salary of the employee is"+e.getSalary());
+		System.out.println("Department of the employee is"+e.getDept());
+	}
+
+}
